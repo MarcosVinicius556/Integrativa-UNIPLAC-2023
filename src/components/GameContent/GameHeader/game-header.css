@@ -1,0 +1,22 @@
+.game-header {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+#game-title {
+    border-radius: 3px;
+    background: rgba(51, 51, 51, 0.567);
+    backdrop-filter: blur(4px);
+    width: 580px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.75);
+}
