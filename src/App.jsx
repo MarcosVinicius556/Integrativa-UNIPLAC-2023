@@ -1,11 +1,12 @@
-import './App.css'
-import GameHeader from './components/GameContent/GameHeader/GameHeader'
-import GameSection from './components/GameContent/GameSection'
+import './App.css';
+import { Outlet } from 'react-router-dom';
 
 function App() {
 
   return (
-      <GameSection />
+    <div className="app">
+      <Outlet />
+    </div>
   )
 }
 
