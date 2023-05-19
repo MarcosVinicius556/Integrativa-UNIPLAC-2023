@@ -2,7 +2,7 @@ import { createContext, useReducer } from 'react';
 
 const initialGameState = {
     playerName: 'Marcos',
-    playerLife: '',
+    playerLife: 100,
     playerScore: '',
     gameQuestion: 1
 }
@@ -19,10 +19,15 @@ const gameReducer = (state, action) => {
                 ...state, gameQuestion: state.gameQuestion + 1
             };
         case 'timeOver':
-            console.log('Fim da partida');
+            console.log('Fim da part ida');
+            //Discutir e implementar a lógica aqui
             return {
                 ...state
             };
+        case 'decrementLife':
+            return {
+                ...state, playerLife: state.playerLife - 10,
+            }
     }    
 }
 

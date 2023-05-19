@@ -23,7 +23,7 @@ function TimerCard() {
             dispatch({ type: 'timeOver' });
             setTimer(30);
         }
-    }, [timer]);
+    }, [dispatch, timer]);
 
     //Reseta o timer
     useEffect(() => {
