@@ -3,7 +3,11 @@
     flex-direction: column;
     height: 600px;
     width: 800px;
+    position: absolute;
 
+    left: 50%;
+    transform: translate(-50%);
+    
     font-family: 'Courier New', monospace;
     font-size: 15px;
     letter-spacing: 1px;

@@ -1,0 +1,63 @@
+.header-top{
+    width: 100%;
+    margin-bottom:20px ;
+    display: flex;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 2px 0.5px rgba(124, 124, 124, 0.438);
+    
+}
+.header-logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    font-weight: 600;
+    font-variant: initial;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.808);
+    margin: 20px 150px 0px;
+    display: block;
+   
+}
+.header-links{
+    text-align: center;
+    width: 100%;
+}
+
+.header-links ul li{
+    margin: 20px 50px 0px 0px ;
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+    font-size: 20px;
+    
+  
+}
+ul li a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.74);
+    
+}
+.buttonLogin{
+    margin: 30px 60px;
+    display: block;   
+    width: 33.33%;
+    text-align: right;
+    
+}
+.buttonLogin button{
+    background-color: rgba(1, 105, 146, 0.596);
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    border: none;
+   
+}
+button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+
