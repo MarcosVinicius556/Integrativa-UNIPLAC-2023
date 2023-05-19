@@ -1,15 +1,15 @@
 import './home.css'
 import GamePage from '../../../routes/GamePage';
 import Header from '../../GameContent/HeaderPage/Header'
+import Objective from '../Objective/Objective';
 
 
 function Main(){
     return(
         <div className='Home'>
             <Header/>
-            <div className='corpo'>
+            <Objective/>
            <GamePage/>
-           </div>
         </div>
 
     )

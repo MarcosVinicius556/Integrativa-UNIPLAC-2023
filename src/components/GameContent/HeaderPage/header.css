@@ -4,7 +4,7 @@
     display: flex;
     height: 100px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 4px 2px 0.5px rgba(124, 124, 124, 0.438);
+    box-shadow: 0px 4px 2px 0.5px rgba(54, 54, 54, 0.438);
     
 }
 .header-logo{
@@ -13,7 +13,7 @@
     font-weight: 600;
     font-variant: initial;
     font-size: 40px;
-    color: rgba(0, 0, 0, 0.808);
+    color: rgba(0, 0, 0, 0.87);
     margin: 20px 150px 0px;
     display: block;
    
