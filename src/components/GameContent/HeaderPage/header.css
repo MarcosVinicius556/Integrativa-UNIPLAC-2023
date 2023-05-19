@@ -51,6 +51,7 @@ ul li a{
     width: 150px;
     font-size: 15px;
     border: none;
+    border-radius: 3px;
    
 }
 button a {
