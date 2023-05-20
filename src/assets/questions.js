@@ -5,7 +5,8 @@ const questoes = [
       question: {
         nomenclature: nomenclaturas[0].id,
         name: 'Pão de Açucar',
-        answer: 'PaoDeAcucar'
+        answer: 'PaoDeAcucar',
+        help: `Dica sobre ${nomenclaturas[0].name}`
       }
       
     },
@@ -13,14 +14,16 @@ const questoes = [
       question: {
         nomenclature: nomenclaturas[1].id,
         name: 'Contador de erros',
-        answer: '_contadorDeErros'
+        answer: '_contadorDeErros',
+        help: `Dica sobre ${nomenclaturas[1].name}`
       }
     },
     {
       question: {
         nomenclature: nomenclaturas[2].id,
         name: 'Método para testes',
-        answer: 'metodoParaTestes'
+        answer: 'metodoParaTestes',
+        help: `Dica sobre ${nomenclaturas[2].name}`
       }
     },
   ];

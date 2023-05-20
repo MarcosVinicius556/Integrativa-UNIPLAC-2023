@@ -1,17 +1,21 @@
 import { createContext, useReducer } from 'react';
+import questoes from '../assets/questions';
+
 
 const initialGameState = {
     playerName: 'Marcos',
     playerLife: 100,
     playerScore: '',
-    gameQuestion: 1
+    gameQuestion: 0,
+    questoes,
 }
 
 const gameReducer = (state, action) => {
     switch(action.type){
         case 'startGame':
             return{
-                ...state, //Devolver aqui também a lista de questões
+                //Sempre que iniciar o game reordena todas as questões
+                ...state, questoes: questoes.sort( () => { return Math.random() - 0.5 })
             };
         case 'nextQuestion':
             console.log('Avançou a questão')
