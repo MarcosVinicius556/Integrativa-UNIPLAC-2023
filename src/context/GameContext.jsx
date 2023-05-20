@@ -25,12 +25,6 @@ const gameReducer = (state, action) => {
             return{
                 ...state, gameQuestion: state.gameQuestion + 1
             };
-        case 'timeOver':
-            console.log('Fim da part ida');
-            //Discutir e implementar a lógica aqui
-            return {
-                ...state
-            };
         case 'correctAnswer':
             console.log(state.playerScore);
             return {
@@ -48,8 +42,20 @@ const gameReducer = (state, action) => {
                     corrects: state.playerScore.corrects,
                     incorrects: state.playerScore.incorrects + 1,
                 },
-                playerLife: state.playerLife - 10,
+                playerLife: state.playerLife - 5,
             }
+        case 'timeOver':
+            console.log('Tempo esgotado!');
+            //DisTcutir e implementar a lógica aqui
+            return {
+                ...state
+            };
+        case 'gameOver':
+            console.log('Fim da partida');
+            //Discutir e implementar a lógica aqui
+            return {
+                ...state
+            };
         default: 
             console.log("Algo não está mapeado!");
     }    

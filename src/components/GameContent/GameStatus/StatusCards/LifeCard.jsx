@@ -8,7 +8,7 @@ function LifeCard() {
     const lifeBar = useRef();
     const { value: gameReducer } = useContext(GameContext);
     const [ state ] = gameReducer; //Aqui não é necessário o disptach (Ao menos ainda...)
-    const { playerLife } = state;
+    const { playerLife, dispatch } = state;
     
     useEffect(() => { 
         lifeBar.current.style.width = `${playerLife}%`;
@@ -21,9 +21,11 @@ function LifeCard() {
             lifeBar.current.style.background = 'red';
         } else if( playerLife < 25 ){ //Muito mal
             lifeBar.current.style.background = 'black';
+        } else if( playerLife <= 0 ) {
+            dispatch({ type:'gameOver' });
         }
 
-    }, [playerLife]);
+    }, [ playerLife ]);
 
     return (
         <div className="game-lifebar game-card">
