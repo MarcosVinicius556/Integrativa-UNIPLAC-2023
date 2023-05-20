@@ -5,7 +5,10 @@ import questoes from '../assets/questions';
 const initialGameState = {
     playerName: 'Marcos',
     playerLife: 100,
-    playerScore: '',
+    playerScore: {
+        corrects: 0,
+        incorrects: 0,
+    },
     gameQuestion: 0,
     questoes,
 }
@@ -28,10 +31,27 @@ const gameReducer = (state, action) => {
             return {
                 ...state
             };
-        case 'decrementLife':
+        case 'correctAnswer':
+            console.log(state.playerScore);
             return {
-                ...state, playerLife: state.playerLife - 10,
+                ...state, 
+                playerScore: {
+                    corrects: state.playerScore.corrects + 1,
+                    incorrects: state.playerScore.incorrects,
+                }
             }
+        case 'incorrectAnswer':
+            console.log(state.playerScore);
+            return {
+                ...state, 
+                playerScore: {
+                    corrects: state.playerScore.corrects,
+                    incorrects: state.playerScore.incorrects + 1,
+                },
+                playerLife: state.playerLife - 10,
+            }
+        default: 
+            console.log("Algo não está mapeado!");
     }    
 }
 

@@ -11,7 +11,6 @@ function LifeCard() {
     const { playerLife } = state;
     
     useEffect(() => { 
-        console.log(`current life: ${playerLife}`)
         lifeBar.current.style.width = `${playerLife}%`;
         
         if( playerLife > 75 ) { //Bom
