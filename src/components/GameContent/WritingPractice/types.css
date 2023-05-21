@@ -1,0 +1,22 @@
+.typesModeling{
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    position: absolute;
+    margin-top: -10px;
+    border-bottom: solid 5px rgba(148, 148, 148, 0.993);;
+}
+.typesModeling h2{
+    margin: 100px 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+}
+.teste{
+    display: flex;
+    margin: 100px 150px;
+    gap: 50px;
+    justify-content: center;
+    
+}
+.teste a{
+    text-decoration: none;
+}

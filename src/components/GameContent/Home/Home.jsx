@@ -1,15 +1,16 @@
 import './home.css'
-import GamePage from '../../../routes/GamePage';
 import Header from '../../GameContent/HeaderPage/Header'
-import Objective from '../Objective/Objective';
+import Description from '../Description/Description';
+import Types from '../WritingPractice/Types';
 
 
 function Main(){
     return(
         <div className='Home'>
             <Header/>
-            <Objective/>
-           <GamePage/>
+            <Description/>
+            <Types/>
+
         </div>
 
     )
