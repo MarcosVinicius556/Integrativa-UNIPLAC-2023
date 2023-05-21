@@ -1,22 +1,23 @@
 .typesModeling{
     width: 100%;
-    background-color: rgb(228, 228, 228);
-    position: absolute;
+    background-color: rgba(235, 236, 243, 0.678);
+    position: relative;
     margin-top: -10px;
-    border-bottom: solid 5px rgba(148, 148, 148, 0.993);;
+    border-bottom: solid 5px rgba(148, 148, 148, 0.993);
 }
-.typesModeling h2{
-    margin: 100px 300px;
+.title-model{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 5px;
+    padding: 50px 300px;
+    
 }
-.teste{
+.cards-types{
     display: flex;
-    margin: 100px 150px;
+    margin: 20px 150px 100px;
     gap: 50px;
     justify-content: center;
     
 }
-.teste a{
+.cards-types a{
     text-decoration: none;
 }

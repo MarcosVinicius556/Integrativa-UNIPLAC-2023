@@ -1,21 +1,27 @@
 import "./cards.css";
 
-function Cards({name, img, type, linguage}) {
+// eslint-disable-next-line react/prop-types
+function Cards({name, img, type, linguage, textOne, textTwo, className}) {
 
+  
     return (
       <div className='cards'>
+        <div className={className} >
 
-          <div className="card-type">
+        <div className="card-type">
           <img src={img} alt="" />
-          <p ><b>{name}</b></p>
+          <p className="textType"><b>{name}</b></p>
           </div>
 
-          <p className="textUsualy">Forma de Uso</p>
+          <p className="textUsualy">{textOne}</p>
           <p className="textType">{type}</p>
-          <p className="textUsualy">Muito usado em</p>
+          <p className="textUsualy">{textTwo}</p>
           <p className="textType">{linguage}</p>
 
         </div>
+
+        </div>
+
 
       );
 }

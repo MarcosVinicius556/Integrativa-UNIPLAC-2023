@@ -1,34 +1,6 @@
 import './types.css'
 import Cards from './Cards/Cards'
-
-const cards = [
-    {
-      snakeCase: {
-        img: 'src/assets/cards/snake.png',
-        title: 'Snake Case',
-        type: 'snake_case',
-        linguage: 'Python'
-      },
-      camelCase:{
-        img: "src/assets/cards/camel.png",
-        title: 'Camel Case',
-        type: 'camelCase',
-        linguage: 'Java, C#'
-      },
-      kebabCase:{
-          img: "src/assets/cards/kebab.png",
-          title: 'Kebab Case',
-          type: 'kebab-case',
-          linguage: 'URLs de sites'
-      },
-      pascalCase:{
-          img: "src/assets/cards/pascal.png",
-          title: 'Pascal Case',
-          type: 'PascalCase',
-          linguage: 'C#'
-      }
-    },
-  ];
+import cards from '../../../assets/cards'
 
 function Types() {
 
@@ -52,19 +24,23 @@ function Types() {
     const pascalCaselinguage = cards.map((x)=>x.pascalCase.linguage)
     const pascalCaseType= cards.map((x)=>x.pascalCase.type)
 
-    return (
+    const textOne = cards.map((x)=>x.textWriting.textOne);
+    const textTwo = cards.map((x)=>x.textWriting.textTwo);
+
+
+      return (
         <div className="typesModeling">
-            <h2>Práticas de Escrita</h2>
-            <section className='teste'>
-                <a href=""><Cards name={snakeCaseName} img = {snakeCaseImg} type={snakeCaseType} linguage={snakeCaselinguage}/></a>
-                <a href="" id='camel'><Cards  name={camelCaseName} img = {camelCaseImg} type={camelCaseType} linguage={camelCaselinguage}/></a>
-                <a href="" id='kebab'><Cards  name={kebabCaseName} img = {kebabCaseImg} type={kebabCaseType} linguage={kebabCaselinguage}/></a>
-                <a href="" id='pascal'><Cards name={pascalCaseName} img = {pascalCaseImg} type={pascalCaseType} linguage={pascalCaselinguage}/></a>
+            <h2 className='title-model'>Práticas de Escrita</h2>
+            <section className='cards-types'>
+                <a href=""><Cards name={snakeCaseName} img = {snakeCaseImg} type={snakeCaseType} linguage={snakeCaselinguage} textOne={textOne} textTwo={textTwo} className={snakeCaseType}/></a>
+                <a href=""><Cards  name={camelCaseName} img = {camelCaseImg} type={camelCaseType} linguage={camelCaselinguage} textOne={textOne} textTwo={textTwo} className={camelCaseType}/></a>
+                <a href=""><Cards  name={kebabCaseName} img = {kebabCaseImg} type={kebabCaseType} linguage={kebabCaselinguage} textOne={textOne} textTwo={textTwo} className={kebabCaseType}/></a>
+                <a href=""><Cards name={pascalCaseName} img = {pascalCaseImg} type={pascalCaseType} linguage={pascalCaselinguage} textOne={textOne} textTwo={textTwo} className={pascalCaseType}/></a>
             </section>
         </div>
         
     
     );
+   
   }
   export default Types;
-  
