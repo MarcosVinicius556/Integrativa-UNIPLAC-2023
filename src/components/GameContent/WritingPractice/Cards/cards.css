@@ -72,6 +72,7 @@ img {
 .modelIf{
   height: 100%;
   background-color: rgba(51, 146, 146, 0.733);
+  border-radius: 8px;
 }
 .modelIf .textType{
   color: rgb(7, 37, 121);
@@ -80,14 +81,17 @@ img {
 .modelFor{
   height: 100%;
   background-color: rgba(199, 186, 9, 0.61);
+  border-radius: 8px;
 }
 .modelFor .textType{
   color: rgb(100, 107, 5);
+  border-radius: 8px;
 }
 
 .modelForeach{
   height: 100%;
   background-color: rgba(255, 52, 1, 0.507);
+  border-radius: 8px;
 }
 
 .modelForeach .textType{
@@ -97,6 +101,7 @@ img {
 .modelWhile{
   height: 100%;
   background-color: rgba(14, 17, 189, 0.507);
+  border-radius: 8px;
 }
 
 .modelWhile .textType{
