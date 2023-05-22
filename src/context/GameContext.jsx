@@ -18,15 +18,15 @@ const gameReducer = (state, action) => {
         case 'startGame':
             return{
                 //Sempre que iniciar o game reordena todas as questões
-                ...state, questoes: questoes.sort( () => { return Math.random() - 0.5 })
+                ...state,
+                 questoes: questoes.sort( () => { return Math.random() - 0.5 })
             };
         case 'nextQuestion':
-            console.log('Avançou a questão')
             return{
-                ...state, gameQuestion: state.gameQuestion + 1
+                ...state,
+                gameQuestion: state.gameQuestion + 1
             };
         case 'correctAnswer':
-            console.log(state.playerScore);
             return {
                 ...state, 
                 playerScore: {
@@ -35,7 +35,6 @@ const gameReducer = (state, action) => {
                 }
             }
         case 'incorrectAnswer':
-            console.log(state.playerScore);
             return {
                 ...state, 
                 playerScore: {
@@ -45,19 +44,23 @@ const gameReducer = (state, action) => {
                 playerLife: state.playerLife - 5,
             }
         case 'timeOver':
-            console.log('Tempo esgotado!');
-            //DisTcutir e implementar a lógica aqui
-            return {
-                ...state
-            };
-        case 'gameOver':
-            console.log('Fim da partida');
+            alert('Tempo esgotado!');
             //Discutir e implementar a lógica aqui
             return {
                 ...state
             };
+        case 'gameOver':
+            alert('Fim da partida');
+            return {
+                ...state
+            };
+        case 'victory':
+            alert('Parabéns você finalizou o jogo');
+            return{
+                ...state,
+            }
         default: 
-            console.log("Algo não está mapeado!");
+            console.log(`${action.type} não está mapeado!`);
     }    
 }
 
