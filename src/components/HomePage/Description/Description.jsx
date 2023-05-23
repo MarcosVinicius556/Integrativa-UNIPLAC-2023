@@ -2,7 +2,7 @@ import "./description.css"
 import Objective from "./Objective/Subtitle";
 import Text from "./Objective/Text";
 
-
+ 
 function Description() {
 
     return (

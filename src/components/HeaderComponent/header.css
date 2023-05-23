@@ -1,10 +1,12 @@
 .header-top{
     width: 100%;
-    margin-bottom:20px ;
-    display: flex;
     height: 100px;
+    display: flex;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 2px 0.5px rgba(54, 54, 54, 0.438);
+    /* position: absolute; */
+    top: 0;
+    margin-bottom: 30px ;
     
 }
 .header-logo{

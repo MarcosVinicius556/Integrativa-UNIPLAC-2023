@@ -1,19 +1,15 @@
-import './home.css'
-// import Header from '../../HeaderComponent/Header';//'../../GameContent/HeaderPage/Header'
-import Description from '../Description/Description';//'../Description/Description';
-import Types from '../WritingPractice/Types';//'../WritingPractice/Types';
-import Language from '../WritingPractice/Linguage';
-// import FooterComponent from '../../FooterComponent/FooterComponent';
+import './home.css';
+import { listCardsSintax, listCardsLanguages } from '../../../assets/cards';
+import Description from '../Description/Description';
+import WritingPractice from '../WritingPractice/WritingPractice';
 
-function Main(){
+function Main(){ 
 
     return(
-        <div className='Home'>
-            {/* <header><Header/></header> */}
+        <div className='corpo'>
             <Description/>
-            <Types/> 
-            <Language/>
-            {/* <footer><FooterComponent/></footer>      */}
+            <WritingPractice title="Práticas de Escrita" list={ listCardsSintax }/> 
+            <WritingPractice title="Estrutura Condicionais e de Repetição" list={ listCardsLanguages }/> 
         </div>
     );
 }
