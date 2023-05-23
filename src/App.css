@@ -1,9 +1,9 @@
 .app {
-    border: 2px solid yellow;
+  min-height: 100%;
+  position: relative;
 }
 
 .page-container {
-    border: 2px solid green;
     display: flex;
     justify-content: center;
     align-items: center;

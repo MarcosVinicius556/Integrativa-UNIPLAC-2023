@@ -39,12 +39,13 @@ function WritingCarousel({ list }) {
                 list.map(obj => (
                                 <motion.div key={obj.name}> 
                                     <Cards 
+                                        color={obj.cardColor}
                                         name={obj.name} 
                                         img={obj.img}
                                         type={obj.caseType}
-                                        linguage={obj.language}
-                                        textOne={obj.aboutOne}
-                                        textTwo={obj.aboutTwo} 
+                                        obsOne={obj.obsOne}
+                                        obsTwo={obj.obsTwo}
+                                        obsThree={obj.obsThree} 
                                         className={obj.className}/>
                                     </motion.div>
                                 )   

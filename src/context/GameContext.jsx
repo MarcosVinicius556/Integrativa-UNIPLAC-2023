@@ -1,5 +1,5 @@
 import { createContext, useReducer } from 'react';
-import questoes from '../assets/questions';
+import questoes from '../assets/questions/questions';
 
 
 const initialGameState = {
