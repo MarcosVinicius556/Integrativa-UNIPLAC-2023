@@ -7,6 +7,7 @@ import App from './App';
 import GamePage from './routes/GamePage';
 import HomePage from './routes/HomePage';
 import AboutPage from './routes/AboutPage';
+import ContactPage from './routes/ContactPage';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
     children: [
       {path: '/', element: <HomePage />},
       {path: '/about', element: <AboutPage />},
+      {path: '/contact', element: <ContactPage />},
       {path: '/game', element: <GamePage />},
     ]
   }
