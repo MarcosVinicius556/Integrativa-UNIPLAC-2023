@@ -8,6 +8,7 @@ import GamePage from './routes/GamePage';
 import HomePage from './routes/HomePage';
 import AboutPage from './routes/AboutPage';
 import ContactPage from './routes/ContactPage';
+import SubscribeSection from './components/SubscribeContent/SubscribeSection';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {path: '/', element: <HomePage />},
+      {path: '/cad-login', element: <SubscribeSection />},
       {path: '/about', element: <AboutPage />},
       {path: '/contact', element: <ContactPage />},
       {path: '/game', element: <GamePage />},
