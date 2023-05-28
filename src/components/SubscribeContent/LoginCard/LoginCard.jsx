@@ -9,7 +9,7 @@ function LoginCard() {
                     <input type="text" name="name" id="inputLogin" className='input-card' required placeholder='Nome de usário ou email'/>
                     <input type="password" name="pass" id="inputSenha" className='input-card' required placeholder='Senha'/>
                 </div>
-                <div className="card-box-row">
+                <div className="card-box-row" id='lembrar'>
                     <div className="lembrar-container">
                         <input type="checkbox" name="Lembrar" id="inputLembrar"/>
                         <label htmlFor="Lembrar">Lembrar-me</label>
@@ -17,7 +17,7 @@ function LoginCard() {
                     <a href="" className='esqueceu-senha'>Perdeu sua senha?</a>
                 </div>
 
-                <input type="submit" value="Entrar" className='inputSubmit'/>
+                <input type="submit" value="Entrar" className='inputSubmit' id='login'/>
             </form>
         </div>
     );
