@@ -9,7 +9,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: sans-serif;
 }
+
+.textType{
+  font-size: 22px;
+}
+
 .card-type {
   position: relative;
   width: 280px;
@@ -31,21 +37,23 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   text-decoration: none;
   list-style-type: none;
   padding: .5rem;
   color: #fff;
 }
 
-.textUsualy {
+.text-title {
   margin-top: 10px;
   color: white;
   font-weight: bold;
   font-size: 20px;
 }
 
-.textType {
+.text-obs {
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 20px;
 }
@@ -55,7 +63,7 @@ img {
   text-decoration: none;
   width: 150px;
   height: 40px;
-  background: rgba(0, 70, 169, 0.864);
+  background: rgba(58, 64, 71, 0.864);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,6 +74,7 @@ img {
 }
 
 .btn-play:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  background: rgb(43, 47, 52);
 }
 

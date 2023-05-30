@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./cards.css";
 
 // eslint-disable-next-line react/prop-types
-function Cards({color, name, img, type, obsOne, obsTwo, obsThree, className}) {
+function Cards({color, name, img, titleOne, obsOne, titleTwo, obsTwo,  className}) {
 
   const cardModel = useRef();
   
@@ -14,19 +14,18 @@ function Cards({color, name, img, type, obsOne, obsTwo, obsThree, className}) {
 
     return (
       <div className='cards' ref={cardModel}>
-        <div className={className} >
           <div className="card-type">
             <img src={img} alt="" />
             <p className="textType"><b>{name}</b></p>
             </div>
-            <p className="obs-title">{className}</p>
             <ul className="list-obs">
-              <li className="textUsualy">{obsOne}</li>
-              <li className="textUsualy">{obsTwo}</li>
-              <li className="textUsualy">{obsThree}</li>
+              {console.log(titleOne)}
+              <li className="text-title">{titleOne}</li>
+              <li className="text-obs">{obsOne}</li>
+              <li className="text-title">{titleTwo}</li>
+              <li className="text-obs">{obsTwo}</li>
             </ul>
-          </div>
-          <Link to="/game"><a className='btn-play'>Jogar</a></Link>
+          <Link to="/game" className='btn-play'>Jogar</Link>
         </div>
       );
 }

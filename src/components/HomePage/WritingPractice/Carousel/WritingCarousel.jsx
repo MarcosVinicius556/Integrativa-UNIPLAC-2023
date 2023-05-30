@@ -43,9 +43,10 @@ function WritingCarousel({ list }) {
                                         name={obj.name} 
                                         img={obj.img}
                                         type={obj.caseType}
+                                        titleOne={obj.titleOne}
                                         obsOne={obj.obsOne}
+                                        titleTwo={obj.titleTwo}
                                         obsTwo={obj.obsTwo}
-                                        obsThree={obj.obsThree} 
                                         className={obj.className}/>
                                     </motion.div>
                                 )   
