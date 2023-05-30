@@ -1,6 +1,7 @@
 .app {
   min-height: 100%;
   position: relative;
+  background: rgba(235, 236, 243, 0.678);
 }
 
 .page-container {

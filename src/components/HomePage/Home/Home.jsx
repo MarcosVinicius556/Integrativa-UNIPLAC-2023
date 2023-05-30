@@ -9,6 +9,7 @@ function Main(){
         <div className='corpo'>
             <Description/>
             <WritingPractice title="Práticas de Escrita" list={ listCardsSintax }/> 
+            <div className="separator"></div>
             <WritingPractice title="Estrutura Condicionais e de Repetição" list={ listCardsLanguages }/> 
         </div>
     );

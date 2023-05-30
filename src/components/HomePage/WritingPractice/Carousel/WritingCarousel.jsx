@@ -26,6 +26,7 @@ function WritingCarousel({ list }) {
   return (
     <>
       <div className="main-carousel">
+      <button className='btn-carousel voltar' onClick={handleLeftClick}></button>
         <motion.div ref={carousel} className='carousel' whileTap={{ cursor: 'grabbing' }}> 
           <motion.div 
           className='inner'
@@ -54,9 +55,6 @@ function WritingCarousel({ list }) {
               }
           </motion.div>
         </motion.div>
-      </div>
-      <div className="buttons-carousel">
-        <button className='btn-carousel voltar' onClick={handleLeftClick}></button>
         <button className='btn-carousel avancar' onClick={handleRigthClick}></button>
       </div>
     </>

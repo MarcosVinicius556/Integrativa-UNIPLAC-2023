@@ -9,6 +9,12 @@
     animation: reveal .9s ease-in-out;
 }
 
+.separator {
+    height: 2px;
+    width: 95%;
+    background: rgb(21, 21, 21);
+}
+
 @keyframes reveal {
     from{
         opacity: 0;

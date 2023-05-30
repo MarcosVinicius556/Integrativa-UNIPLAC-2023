@@ -50,7 +50,7 @@ export const listCardsLanguages = [
     titleTwo: 'Dificuldade',
     obsTwo: '2',
     className: 'modelIf',
-    cardColor: 'rgba(51, 146, 146, 0.733)'
+    cardColor: '#404040'
   },
   {
     name: 'For', 
@@ -60,7 +60,7 @@ export const listCardsLanguages = [
     titleTwo: 'Dificuldade',
     obsTwo: '1',
     className: 'modelFor',
-    cardColor: 'rgba(199, 186, 9, 0.61)'
+    cardColor: '#404040'
   },
   {
     name: 'Foreach',
@@ -70,7 +70,7 @@ export const listCardsLanguages = [
     titleTwo: 'Dificuldade',
     obsTwo: '3',
     className: 'modelForeach',
-    cardColor: 'rgba(255, 52, 1, 0.507)'
+    cardColor: '#404040'
   },
   {
     name: 'While',
@@ -80,6 +80,6 @@ export const listCardsLanguages = [
     titleTwo: 'Dificuldade',
     obsTwo: '2',
     className: 'modelWhile',
-    cardColor: 'rgba(14, 17, 189, 0.507)'
+    cardColor: '#404040'
   }
 ];
