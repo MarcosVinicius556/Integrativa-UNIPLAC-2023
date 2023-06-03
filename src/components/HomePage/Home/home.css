@@ -1,0 +1,26 @@
+.corpo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    animation: reveal .9s ease-in-out;
+    overflow: hidden;
+}
+
+.separator {
+    height: 2px;
+    width: 95%;
+    background: rgb(21, 21, 21);
+}
+
+@keyframes reveal {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

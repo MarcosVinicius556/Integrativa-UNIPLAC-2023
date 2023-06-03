@@ -1,0 +1,46 @@
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    animation: reveal .9s ease-in-out;
+}
+
+@keyframes reveal {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.about-tile {
+    width: 650px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    margin-bottom: 5rem;
+}
+
+span {
+    color: red;
+}
+
+.about-text {
+    width: 70%;
+    height: 250px;
+    font-size: 32px;
+}
+
+.about-img {
+    background: url('../../assets/team.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 400px;
+}

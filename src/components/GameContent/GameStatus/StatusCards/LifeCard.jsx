@@ -7,24 +7,24 @@ function LifeCard() {
 
     const lifeBar = useRef();
     const { value: gameReducer } = useContext(GameContext);
-    const [ state ] = gameReducer; //Aqui não é necessário o disptach (Ao menos ainda...)
+    const [ state, dispatch ] = gameReducer; //Aqui não é necessário o disptach (Ao menos ainda...)
     const { playerLife } = state;
     
     useEffect(() => { 
-        console.log(`current life: ${playerLife}`)
         lifeBar.current.style.width = `${playerLife}%`;
-        
         if( playerLife > 75 ) { //Bom
             lifeBar.current.style.background = 'green';
-        } else if( playerLife > 50 && playerLife < 75 ) { //Mediano
+        } else if( playerLife >= 50 && playerLife <= 75 ) { //Mediano
             lifeBar.current.style.background = 'yellow';
-        } else if( playerLife > 25 && playerLife < 50 ) { // Mal
+        } else if( playerLife >= 25 && playerLife < 50 ) { // Mal
             lifeBar.current.style.background = 'red';
-        } else if( playerLife < 25 ){ //Muito mal
+        } else if( playerLife <= 25 && playerLife >= 25 ){ //Muito mal
             lifeBar.current.style.background = 'black';
+        } else if( playerLife <= 0 ) {
+            dispatch({ type:'gameOver' });
         }
 
-    }, [playerLife]);
+    }, [ playerLife ]);
 
     return (
         <div className="game-lifebar game-card">
@@ -32,7 +32,7 @@ function LifeCard() {
             <div className="health-bar">
                 <div className="health-fill" ref={lifeBar}></div>
             </div>
-          </div>
+        </div>
     );
 }
 

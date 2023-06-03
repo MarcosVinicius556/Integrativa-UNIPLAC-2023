@@ -5,10 +5,12 @@ import './game-section.css';
 
 function GameSection() {
     return (
-        <div className="game-container">
-            <GameHeader />
-            <GameMain />
-            <GameStatus />
+        <div className="game-page">
+            <div className="game-container">
+                <GameHeader />
+                <GameMain />
+                <GameStatus />
+            </div>
         </div>
     );
 }

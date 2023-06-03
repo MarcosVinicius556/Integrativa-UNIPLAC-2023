@@ -1,33 +1,66 @@
 import { createContext, useReducer } from 'react';
+import questoes from '../assets/questions/questions';
+
 
 const initialGameState = {
     playerName: 'Marcos',
     playerLife: 100,
-    playerScore: '',
-    gameQuestion: 1
+    playerScore: {
+        corrects: 0,
+        incorrects: 0,
+    },
+    gameQuestion: 0,
+    questoes,
 }
 
 const gameReducer = (state, action) => {
     switch(action.type){
         case 'startGame':
             return{
-                ...state, //Devolver aqui também a lista de questões
+                //Sempre que iniciar o game reordena todas as questões
+                ...state,
+                 questoes: questoes.sort( () => { return Math.random() - 0.5 })
             };
         case 'nextQuestion':
-            console.log('Avançou a questão')
             return{
-                ...state, gameQuestion: state.gameQuestion + 1
+                ...state,
+                gameQuestion: state.gameQuestion + 1
             };
+        case 'correctAnswer':
+            return {
+                ...state, 
+                playerScore: {
+                    corrects: state.playerScore.corrects + 1,
+                    incorrects: state.playerScore.incorrects,
+                }
+            }
+        case 'incorrectAnswer':
+            return {
+                ...state, 
+                playerScore: {
+                    corrects: state.playerScore.corrects,
+                    incorrects: state.playerScore.incorrects + 1,
+                },
+                playerLife: state.playerLife - 5,
+            }
         case 'timeOver':
-            console.log('Fim da part ida');
+            alert('Tempo esgotado!');
             //Discutir e implementar a lógica aqui
             return {
                 ...state
             };
-        case 'decrementLife':
+        case 'gameOver':
+            alert('Fim da partida');
             return {
-                ...state, playerLife: state.playerLife - 10,
+                ...state
+            };
+        case 'victory':
+            alert('Parabéns você finalizou o jogo');
+            return{
+                ...state,
             }
+        default: 
+            console.log(`${action.type} não está mapeado!`);
     }    
 }
 

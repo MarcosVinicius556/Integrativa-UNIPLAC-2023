@@ -1,12 +1,12 @@
 import './status-card.css';
 import { useContext } from 'react';
 import { GameContext } from '../../../../context/GameContext';
-import GattinoFeliz from '../../../../assets/gattino-feliz.png';
-import GattinoQuaseFeliz from '../../../../assets/gattino-quase-feliz.png';
-import GattinoSuspeito from '../../../../assets/gattino-suspeito.png';
-import GattinoDesanimado from '../../../../assets/gattino-desanimado.png';
-import GattinoMediano from '../../../../assets/gattino-mediano.png';
-import GattinoSurtado from '../../../../assets/gattino-surtado.png';
+import GattinoFeliz from '../../../../assets/gattino-expressions/gattino-feliz.png';
+import GattinoQuaseFeliz from '../../../../assets/gattino-expressions/gattino-quase-feliz.png';
+import GattinoSuspeito from '../../../../assets/gattino-expressions/gattino-suspeito.png';
+import GattinoDesanimado from '../../../../assets/gattino-expressions/gattino-desanimado.png';
+import GattinoMediano from '../../../../assets/gattino-expressions/gattino-mediano.png';
+import GattinoSurtado from '../../../../assets/gattino-expressions/gattino-surtado.png';
 
 function ImageCard() {
 
@@ -15,17 +15,17 @@ function ImageCard() {
     const{ playerLife } = state;
 
     const handleImage = () => {
-        if( playerLife > 85 ) {
+        if( playerLife >= 85 ) {
             return GattinoFeliz;
-        } else if( playerLife > 65 && playerLife < 85 ) {
+        } else if( playerLife >= 65 && playerLife <= 85 ) {
             return GattinoQuaseFeliz;
-        } else if( playerLife > 45 && playerLife < 65 ) {
+        } else if( playerLife >= 45 && playerLife <= 65 ) {
             return GattinoSuspeito;
-        } else if( playerLife > 35 && playerLife < 45 ) {
+        } else if( playerLife >= 35 && playerLife <= 45 ) {
             return GattinoDesanimado;
-        } else if( playerLife > 25 && playerLife < 35 ){
+        } else if( playerLife >= 25 && playerLife <= 35 ){
             return GattinoMediano;
-        } else if( playerLife < 25 ){
+        } else if( playerLife <= 25 ){
             return GattinoSurtado;
         }
     }
