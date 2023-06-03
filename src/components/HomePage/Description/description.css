@@ -10,8 +10,11 @@
 .objective img{
     width: 320px;
     height: 340px;
-    position: absolute;
-    top: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+
     /* transform: rotate(-2.5deg); Equal to rotateZ(45deg) */
 }
 
@@ -43,12 +46,16 @@
 }
 
 /* Tablets */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
     .objective {
 
   }
   .objective img{
-
+    min-width: auto;
+    padding: 10%;
+    width: 300px;
+    height: 320px;
+    display: inline-block;
   }
   
   .bodyObjective {

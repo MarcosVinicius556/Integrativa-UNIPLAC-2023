@@ -4,8 +4,10 @@ import firstText from '../../../../assets/firstText';//"../../../../assets/first
 function Text() {
   let text = firstText.map((x) => x.object.meaning);
   return (
+    <div className="row col col-sm col-lg col-xs">
     <div className="textObjective">
       <p>{text}</p>
+    </div>
     </div>
   );
 }
