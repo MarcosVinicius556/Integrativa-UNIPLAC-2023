@@ -1,18 +1,17 @@
-import "./description.css"
+import "./description.css";
 import Objective from "./Objective/Subtitle";
 import Text from "./Objective/Text";
 
- 
 function Description() {
-
-    return (
-        <div className="objective">
-            <div className="bodyObjective">
-                <Objective />
-                <Text/>
-            </div>
-
+  return (
+    <div className="row">
+      <div className="objective col-12">
+        <div className="col-11 bodyObjective">
+          <Objective />
+          <Text />
         </div>
-    );
-  }
-  export default Description;
+      </div>
+    </div>
+  );
+}
+export default Description;
