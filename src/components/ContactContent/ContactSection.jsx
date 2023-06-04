@@ -6,11 +6,8 @@ function ContactSection(){
         <section className="contact-us">
         <div className="form-container">
             <h1 className="contact-title">
-                Ficou interessado em nosso trabalho?
+                Entre em contato!
             </h1>
-            <p className="contact-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum incidunt cumque ipsum? Nesciunt amet ad eum similique eius assumenda autem iste saepe obcaecati. Voluptates fuga doloremque veniam rerum quaerat velit.
-            </p>
             <ContactForm />
         </div>
     </section>

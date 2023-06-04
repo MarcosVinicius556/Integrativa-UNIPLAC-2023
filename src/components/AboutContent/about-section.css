@@ -31,9 +31,23 @@ span {
 }
 
 .about-text {
-    width: 70%;
+    width: 100%;
     height: 250px;
     font-size: 32px;
+    margin-bottom: 7rem;
+}
+
+.about-text p {
+    text-align: center;
+    font-size: 42px;
+}
+
+.about-text ul {
+    padding: 1rem;
+}
+
+.about-text ul li {
+    list-style: none;
 }
 
 .about-img {
