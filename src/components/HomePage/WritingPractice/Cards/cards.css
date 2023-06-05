@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   font-family: sans-serif;
+  justify-content: center;
 }
 
 .textType{
@@ -39,11 +40,13 @@ img {
 }
 
 .text-title {
+  margin-top: 5px;
   letter-spacing: 1px;
   /* margin-top: 5px; */
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 19px;
+  transform: translateX(-10%);
 }
 
 .text-obs {
@@ -51,7 +54,8 @@ img {
   /* margin-top: 5px; */
   color: rgb(0, 0, 0);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
+  transform: translate(-10%, -90%);
 }
 
 .btn-play {
@@ -67,11 +71,12 @@ img {
   font-size: 18px;
   letter-spacing: 2px;
   transition: transform .2s;
+  transform: translateY(-60%);
   /* margin-top: -40px; */
 }
 
 .btn-play:hover {
-  transform: scale(1.02);
+  transform: scale(1.02) translateY(-60%);;
   background: rgba(36, 41, 70, 0.864);
   color: #fff;
 }
