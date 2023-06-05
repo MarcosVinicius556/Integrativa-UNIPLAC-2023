@@ -4,10 +4,17 @@
     justify-content: center;
     align-items: center;
     width: 70%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .curiosities-box{
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.curiosities-container-title {
+    font-size: 52px;
+    color: #fff;
 }

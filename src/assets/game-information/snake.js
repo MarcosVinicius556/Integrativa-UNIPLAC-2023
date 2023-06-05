@@ -1,6 +1,10 @@
+import snake from '../cards/snake.png';
+
 const snakeInformation = {
+    id: 4,
     nome: "Snake Case",
     textoSobre:"Snake Case é caracterizado pelo uso de letras minúsculas e palavras separadas por underscores (_). O Snake Case é frequentemente utilizado para nomear variáveis, funções, constantes e outros elementos. É uma alternativa ao Camel Case, que usa letras maiúsculas para indicar a separação entre palavras.",
+    img: snake,
     exemplos: [
         {
             titulo: "Função",

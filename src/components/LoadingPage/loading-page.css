@@ -1,0 +1,39 @@
+.loading-page {
+    background: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .loading-spinner {
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    animation: spin-pulse 2s infinite linear;
+  }
+  
+.img-container {
+    background: red;
+}
+
+  @keyframes spin-pulse {
+    0% {
+      transform: rotate(0deg) scale(1.0);
+    }
+    25% {
+      transform: rotate(90deg) scale(1.5);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.0);
+    }
+    75% {
+      transform: rotate(270deg) scale(1.5);
+    }
+    100% {
+      transform: rotate(360deg) scale(1.0);
+    }
+  }
+  

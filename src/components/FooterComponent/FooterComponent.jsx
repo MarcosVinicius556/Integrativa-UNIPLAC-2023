@@ -3,7 +3,7 @@ import './footerComponent.css'
 function FooterComponent(){
     return(
         <div className='footer'> 
-            <p className='text'>2023</p>
+            <p className='footer-text'>2023</p>
         </div>
 
     );

@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {path: '/cad-login', element: <SubscribeSection />},
       {path: '/about', element: <AboutPage />},
       {path: '/contact', element: <ContactPage />},
-      {path: '/game', element: <GamePage />},
+      {path: '/game/:id', element: <GamePage />},
       {path: 'gameOver', element: <GameOverScreen /> }
     ]
   }

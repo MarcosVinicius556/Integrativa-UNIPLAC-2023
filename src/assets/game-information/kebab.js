@@ -1,6 +1,10 @@
+import kebab from '../cards/kebab.png';
+
 const kebabInformation = {
+    id: 2,
     nome: "Kebab Case",
     textoSobre: "No Kebab Case as palavras são separadas por hifens ('-'). É um dos casos de uso comuns para nomear variáveis, identificadores e arquivos em programação. É semelhante ao Snake Case, onde as palavras são separadas por underscores ('_').",
+    img: kebab,
     exemplos: [
         {
             titulo: "Variáveis",

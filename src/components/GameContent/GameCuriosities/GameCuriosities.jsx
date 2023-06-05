@@ -1,13 +1,16 @@
 import CuriositiesCard from './CuriositeCard/CuriositiesCard';
 import './game-curiosities.css'
 
-function GameCuriosities() {
+function GameCuriosities({ gameInformation }) {
   return (
     <div className='game-curiosities-container'>
-        <h1 className="curiosities-container-title">Curiosidades</h1>
+        <h1 className="curiosities-container-title">Curiosidades sobre { gameInformation.nome }</h1>
         <div className="curiosities-box">
-          <CuriositiesCard title="teste" text="texto de teste" />
-          <CuriositiesCard title="teste" text="texto de teste" />
+          {
+            gameInformation.curiosidades.map((curiosidade) => (
+              <CuriositiesCard title={curiosidade.titulo} text={curiosidade.texto} key={ curiosidade.titulo + "_" + curiosidade.texto }/>
+            ))
+          }
         </div>
     </div>
   )

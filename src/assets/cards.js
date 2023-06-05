@@ -2,6 +2,7 @@ import snake from './cards/snake.png';
 import camel from './cards/camel.png';
 import kebab from './cards/kebab.png';
 import pascal from './cards/pascal.png';
+import random from './cards/aleatorio.png';
 
 import programing from './cards/programing.png';
 import coding from './cards/coding.png';
@@ -10,6 +11,7 @@ import data from './cards/data.png';
 
 export const listCardsSintax = [
     {
+      id: 4,
       name: 'Snake Case',
       img: snake,
       titleOne: 'Forma de Uso',
@@ -20,6 +22,7 @@ export const listCardsSintax = [
       cardColor: 'rgb(77, 91, 112)'
     },
     {
+      id: 1,
       name: 'Camel Case', 
       img: camel,
       titleOne: 'Forma de Uso',
@@ -30,6 +33,7 @@ export const listCardsSintax = [
       cardColor: 'rgb(77, 91, 112)'
     },
     {
+      id: 2,
       name: 'Kebab Case',
       img: kebab,
       titleOne: 'Forma de Uso',
@@ -40,6 +44,7 @@ export const listCardsSintax = [
       cardColor: 'rgb(77, 91, 112)'
     },
     {
+      id: 3,
       name: 'Pascal Case',
       img: pascal,
       titleOne: 'Forma de Uso',
@@ -48,48 +53,16 @@ export const listCardsSintax = [
       obsTwo: 'C#',
       className: 'PascalCase',
       cardColor: 'rgb(77, 91, 112)'
+    },
+    {
+      id: 5,
+      name: 'Modo Aleatório',
+      img: random,
+      titleOne: 'Forma de Uso',
+      obsOne: '_deTudoFera!',
+      titleTwo: 'Muito usado em',
+      obsTwo: 'C#',
+      className: 'PascalCase',
+      cardColor: 'rgb(77, 91, 112)'
     }
   ];
-
-export const listCardsLanguages = [
-  {
-    name: 'If',
-    img: programing,
-    titleOne: 'Importância',
-    obsOne: '5',
-    titleTwo: 'Dificuldade',
-    obsTwo: '2',
-    className: 'modelIf',
-    cardColor: '#404040'
-  },
-  {
-    name: 'For', 
-    img: coding,
-    titleOne: 'Importância',
-    obsOne: '5',
-    titleTwo: 'Dificuldade',
-    obsTwo: '1',
-    className: 'modelFor',
-    cardColor: '#404040'
-  },
-  {
-    name: 'Foreach',
-    img: programingCourse,
-    titleOne: 'Importância',
-    obsOne: '4',
-    titleTwo: 'Dificuldade',
-    obsTwo: '3',
-    className: 'modelForeach',
-    cardColor: '#404040'
-  },
-  {
-    name: 'While',
-    img: data,
-    titleOne: 'Importância',
-    obsOne: '5',
-    titleTwo: 'Dificuldade',
-    obsTwo: '2',
-    className: 'modelWhile',
-    cardColor: '#404040'
-  }
-];

@@ -1,6 +1,10 @@
+import pascal from '../cards/pascal.png';
+
 const pascalInformation = {
+    id: 3,
     nome: "Pascal Case",
     textoSobre: "O Pascal Case é uma convenção de nomenclatura usada para escrever palavras compostas ou frases onde cada palavra começa com uma letra maiúscula. Essa convenção é comumente usada em programação para nomear classes, métodos, variáveis e outros identificadores.",
+    img: pascal,
     exemplos: [
         {
             titulo: "Classe",

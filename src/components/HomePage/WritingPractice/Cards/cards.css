@@ -55,7 +55,7 @@ img {
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 17px;
-  transform: translate(-10%, -90%);
+  transform: translateX(-10%);
 }
 
 .btn-play {
@@ -71,12 +71,12 @@ img {
   font-size: 18px;
   letter-spacing: 2px;
   transition: transform .2s;
-  transform: translateY(-60%);
+  /* transform: translateY(-20%); */
   /* margin-top: -40px; */
 }
 
 .btn-play:hover {
-  transform: scale(1.02) translateY(-60%);;
+  transform: scale(1.02); /** translateY(-60%);;*/
   background: rgba(36, 41, 70, 0.864);
   color: #fff;
 }

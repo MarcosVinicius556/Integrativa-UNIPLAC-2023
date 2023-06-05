@@ -2,7 +2,7 @@
     border: 2px solid gray;
     background: #fff;
     border-radius: 5px;
-    width: 300px;
+    width: 600px;
     height: 150px;
     display: flex;
     justify-content: center;
@@ -12,4 +12,15 @@
     -webkit-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.75);
+    margin-top: 2rem;
+}
+
+.curiosities-title {
+    font-size: 32px;
+    /* transform: translateY(-50%); */
+}
+
+.curiosities-text {
+    font-size: 20px;
+    /* transform: translateY(-20%); */
 }

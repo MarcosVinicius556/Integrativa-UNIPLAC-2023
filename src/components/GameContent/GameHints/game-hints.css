@@ -13,4 +13,10 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin: 32px;
+}
+
+.hints-container-title {
+    color: #fff;
+    font-size: 52px;
 }

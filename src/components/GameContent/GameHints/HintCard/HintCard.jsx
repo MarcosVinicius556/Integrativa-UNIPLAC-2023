@@ -5,7 +5,7 @@ function HintCard({ title, text }) {
   return (
     <div className='hint-card-container'>
         <h1 className="hint-title">{ title }</h1>
-        <p className="hint-title">{ text }</p>
+        <p className="hint-text">{ text }</p>
     </div>
   )
 }
