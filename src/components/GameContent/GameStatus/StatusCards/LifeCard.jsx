@@ -4,7 +4,7 @@ import { GameContext } from '../../../../context/GameContext';
 import './status-card.css';
 
 
-function LifeCard() {
+function LifeCard({ gameId }) {
 
     const navigateTo = useNavigate();
 
@@ -14,7 +14,7 @@ function LifeCard() {
     const { playerLife } = state;
     
     const handleGameOver = () => {
-        navigateTo("/gameOver")
+        navigateTo(`/gameOver/${gameId}`)
     }
 
     useEffect(() => { 

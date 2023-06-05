@@ -4,7 +4,7 @@ import { GameContext } from '../../../../context/GameContext';
 import './status-card.css';
 
 
-function TimerCard() {
+function TimerCard({ gameId }) {
 
     const navigateTo = useNavigate();
 
@@ -14,7 +14,7 @@ function TimerCard() {
     const [timer, setTimer] = useState(30);
 
     const handleGameOver = () => {
-        navigateTo("/gameOver")
+        navigateTo(`/gameOver/${gameId}`)
     }
 
     useEffect(() => {
