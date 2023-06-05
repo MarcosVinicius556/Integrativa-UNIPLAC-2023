@@ -1,15 +1,22 @@
 import { useContext, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { GameContext } from '../../../../context/GameContext';
 import './status-card.css';
 
 
 function LifeCard() {
 
+    const navigateTo = useNavigate();
+
     const lifeBar = useRef();
     const { value: gameReducer } = useContext(GameContext);
     const [ state, dispatch ] = gameReducer; //Aqui não é necessário o disptach (Ao menos ainda...)
     const { playerLife } = state;
     
+    const handleGameOver = () => {
+        navigateTo("/gameOver")
+    }
+
     useEffect(() => { 
         lifeBar.current.style.width = `${playerLife}%`;
         if( playerLife > 75 ) { //Bom
@@ -21,7 +28,7 @@ function LifeCard() {
         } else if( playerLife <= 25 && playerLife >= 25 ){ //Muito mal
             lifeBar.current.style.background = 'black';
         } else if( playerLife <= 0 ) {
-            dispatch({ type:'gameOver' });
+            dispatch({ type:'gameOver', payload:{handleGameOver} });
         }
 
     }, [ playerLife ]);

@@ -44,13 +44,12 @@ const gameReducer = (state, action) => {
                 playerLife: state.playerLife - 5,
             }
         case 'timeOver':
-            window.location.href = '/gameOver';
             //Discutir e implementar a lógica aqui
             return {
                 ...state
             };
         case 'gameOver':
-            window.location.href = '/gameOver';
+            action.payload.handleGameOver();
             return {
                 ...state
             };
@@ -75,7 +74,7 @@ export const GameProvider =  ({children}) => {
     const value = useReducer(gameReducer, initialGameState);
     
     return (
-        <GameContext.Provider value={{value}}>
+        <GameContext.Provider value={{ value }}>
             {children}
         </GameContext.Provider>
     );

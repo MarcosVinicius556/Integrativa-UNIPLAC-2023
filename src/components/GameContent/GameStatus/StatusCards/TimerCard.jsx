@@ -1,14 +1,21 @@
 import { useContext, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { GameContext } from '../../../../context/GameContext';
 import './status-card.css';
 
 
 function TimerCard() {
 
+    const navigateTo = useNavigate();
+
     const {value: gameReducer} = useContext(GameContext);
     const [state, dispatch] = gameReducer;
     
     const [timer, setTimer] = useState(30);
+
+    const handleGameOver = () => {
+        navigateTo("/gameOver")
+    }
 
     useEffect(() => {
       const interval = setInterval(() => {
@@ -20,7 +27,7 @@ function TimerCard() {
 
     useEffect(() => {
         if(timer === 0){
-            dispatch({ type: 'gameOver' });
+            dispatch({ type: 'gameOver', payload:{handleGameOver} });
             setTimer(30);
         }
     }, [dispatch, timer]);
