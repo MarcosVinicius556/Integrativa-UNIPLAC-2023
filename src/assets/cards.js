@@ -1,7 +1,17 @@
+import snake from './cards/snake.png';
+import camel from './cards/camel.png';
+import kebab from './cards/kebab.png';
+import pascal from './cards/pascal.png';
+
+import programing from './cards/programing.png';
+import coding from './cards/coding.png';
+import programingCourse from './cards/programming-course.png';
+import data from './cards/data.png';
+
 export const listCardsSintax = [
     {
       name: 'Snake Case',
-      img: 'src/assets/cards/snake.png',
+      img: snake,
       titleOne: 'Forma de Uso',
       obsOne: 'snake_case',
       titleTwo: 'Muito usado em',
@@ -11,7 +21,7 @@ export const listCardsSintax = [
     },
     {
       name: 'Camel Case', 
-      img: 'src/assets/cards/camel.png',
+      img: camel,
       titleOne: 'Forma de Uso',
       obsOne: 'camelCase',
       titleTwo: 'Muito usado em',
@@ -21,7 +31,7 @@ export const listCardsSintax = [
     },
     {
       name: 'Kebab Case',
-      img: 'src/assets/cards/kebab.png',
+      img: kebab,
       titleOne: 'Forma de Uso',
       obsOne: 'kebab-case',
       titleTwo: 'Muito usado em',
@@ -31,7 +41,7 @@ export const listCardsSintax = [
     },
     {
       name: 'Pascal Case',
-      img: 'src/assets/cards/pascal.png',
+      img: pascal,
       titleOne: 'Forma de Uso',
       obsOne: 'PascalCase',
       titleTwo: 'Muito usado em',
@@ -44,7 +54,7 @@ export const listCardsSintax = [
 export const listCardsLanguages = [
   {
     name: 'If',
-    img: 'src/assets/cards/programing.png',
+    img: programing,
     titleOne: 'Importância',
     obsOne: '5',
     titleTwo: 'Dificuldade',
@@ -54,7 +64,7 @@ export const listCardsLanguages = [
   },
   {
     name: 'For', 
-    img: 'src/assets/cards/coding.png',
+    img: coding,
     titleOne: 'Importância',
     obsOne: '5',
     titleTwo: 'Dificuldade',
@@ -64,7 +74,7 @@ export const listCardsLanguages = [
   },
   {
     name: 'Foreach',
-    img: 'src/assets/cards/programming-course.png',
+    img: programingCourse,
     titleOne: 'Importância',
     obsOne: '4',
     titleTwo: 'Dificuldade',
@@ -74,7 +84,7 @@ export const listCardsLanguages = [
   },
   {
     name: 'While',
-    img: 'src/assets/cards/data.png',
+    img: data,
     titleOne: 'Importância',
     obsOne: '5',
     titleTwo: 'Dificuldade',

@@ -1,0 +1,120 @@
+.game-over-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-over-container h1{
+    font-size: 65px;
+    margin-bottom: 5rem;
+    transform: translateY(-100%);
+}
+
+.img-game-over{
+    transform: translateY(-40%);
+    width: 400px;
+    height: 400px;
+    animation: gattinoTransition 8s ease-in infinite;
+}
+
+.game-over-container h4{
+    font-size: 32px;
+    text-align: center;
+    transform: translateY(-250%);
+}
+
+.buttons-container{
+    transform: translateY(-100%);
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-return, .btn-try-again {
+    text-decoration: none;
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    font-size: 24px;
+    color: #fff;
+    transition: transform .2s;
+}
+
+.btn-return:hover{
+    transform: scale(1.02);
+    color: #fff;
+    background: #8f5050;
+}
+
+.btn-try-again:hover{
+    transform: scale(1.02);
+    color: #fff;
+    background: #48854e;
+}
+
+.btn-try-again {
+    background: #79dd81;
+}
+
+.btn-return {
+    background: #dd7979;
+}
+
+@keyframes gattinoTransition {
+    0% {
+        background: url('../../../assets/gattino-expressions/gattino-feliz.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    16% {
+        background: url('../../../assets/gattino-expressions/gattino-quase-feliz.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    32% {
+        background: url('../../../assets/gattino-expressions/gattino-mediano.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    46% {
+        background: url('../../../assets/gattino-expressions/gattino-desanimado.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    64% {
+        background: url('../../../assets/gattino-expressions/gattino-suspeito.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    80% {
+        background: url('../../../assets/gattino-expressions/gattino-surtado.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    96% {
+        background: url('../../../assets/gattino-expressions/gattino-feliz.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}

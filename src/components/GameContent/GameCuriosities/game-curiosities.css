@@ -1,0 +1,13 @@
+.game-curiosities-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.curiosities-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

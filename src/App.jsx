@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="app">
         <Header />
-        <Container fluid>
+        {/* <Container fluid> */}
           <div className="page-container">
             <Outlet />
           </div>
-        </Container>
+        {/* </Container> */}
         <FooterComponent />
       </div>
   )

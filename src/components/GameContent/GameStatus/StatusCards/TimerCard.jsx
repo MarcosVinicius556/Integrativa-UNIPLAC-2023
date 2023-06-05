@@ -20,14 +20,14 @@ function TimerCard() {
 
     useEffect(() => {
         if(timer === 0){
-            dispatch({ type: 'timeOver' });
+            dispatch({ type: 'gameOver' });
             setTimer(30);
         }
     }, [dispatch, timer]);
 
     //Reseta o timer
     useEffect(() => {
-        
+        setTimer(30);
     }, [state.gameQuestion]);
     return (
         <div className="game-timer game-card">

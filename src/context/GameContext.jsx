@@ -44,13 +44,13 @@ const gameReducer = (state, action) => {
                 playerLife: state.playerLife - 5,
             }
         case 'timeOver':
-            alert('Tempo esgotado!');
+            window.location.href = '/gameOver';
             //Discutir e implementar a lógica aqui
             return {
                 ...state
             };
         case 'gameOver':
-            alert('Fim da partida');
+            window.location.href = '/gameOver';
             return {
                 ...state
             };

@@ -13,20 +13,19 @@ function Cards({color, name, img, titleOne, obsOne, titleTwo, obsTwo,  className
   }, []);
 
     return (
-      <div className='cards' ref={cardModel}>
-          <div className="card-type">
-            <img src={img} alt="" />
-            <p className="textType"><b>{name}</b></p>
-            </div>
-            <ul className="list-obs">
-              {console.log(titleOne)}
-              <li className="text-title">{titleOne}</li>
-              <li className="text-obs">{obsOne}</li>
-              <li className="text-title">{titleTwo}</li>
-              <li className="text-obs">{obsTwo}</li>
-            </ul>
-          <Link to="/game" className='btn-play'>Jogar</Link>
+    <div className='cards' ref={cardModel}>
+        <div className="card-type">
+          <img src={img} alt="" />
+          <p className="textType"><b>{name}</b></p>
         </div>
+        <ul className="list-obs">
+          <li className="text-title">{titleOne}</li>
+          <li className="text-obs">{obsOne}</li>
+          <li className="text-title">{titleTwo}</li>
+          <li className="text-obs">{obsTwo}</li>
+        </ul>
+        <Link to="/game" className='btn-play'>Jogar</Link>
+      </div>
       );
 }
 

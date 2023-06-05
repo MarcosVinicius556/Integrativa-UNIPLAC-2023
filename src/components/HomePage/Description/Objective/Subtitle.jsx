@@ -1,4 +1,5 @@
 import firstText from "../../../../assets/firstText"; //"../../../../assets/firstText";
+import logo from '../../../../assets/objective.jpeg';
 import "./objective.css";
 
 function Subtitle() {
@@ -12,7 +13,7 @@ function Subtitle() {
       </div>
       <div className="row">
       <div className="logoSubtitle col-12">
-      <img src="src\assets\objective.jpeg" alt="" />
+      <img src={logo} alt="" />
         </div>
 
 

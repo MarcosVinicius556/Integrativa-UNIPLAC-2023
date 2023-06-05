@@ -10,6 +10,7 @@ import HomePage from './routes/HomePage';
 import AboutPage from './routes/AboutPage';
 import ContactPage from './routes/ContactPage';
 import SubscribeSection from './components/SubscribeContent/SubscribeSection';
+import GameOverScreen from './components/GameContent/GameOverScreen/GameOverScreen';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       {path: '/about', element: <AboutPage />},
       {path: '/contact', element: <ContactPage />},
       {path: '/game', element: <GamePage />},
+      {path: 'gameOver', element: <GameOverScreen /> }
     ]
   }
 ]);

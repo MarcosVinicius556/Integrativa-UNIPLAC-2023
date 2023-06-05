@@ -1,0 +1,15 @@
+.hint-card-container{
+    border: 2px solid gray;
+    background: #fff;
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    -webkit-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.75);
+}
